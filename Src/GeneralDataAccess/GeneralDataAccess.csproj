@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2049C022-13A9-4D50-AB60-906B4635F49A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneralDataAccess</RootNamespace>
+    <AssemblyName>GeneralDataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Useease.Utilities">
+      <HintPath>..\Lib\Useease.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionQueryEntity.cs" />
+    <Compile Include="ActionQueryType.cs" />
+    <Compile Include="ActualPropertySelector.cs" />
+    <Compile Include="ActualPropertyTrimmer.cs" />
+    <Compile Include="AggregationAttribute.cs" />
+    <Compile Include="AggregationColumn.cs" />
+    <Compile Include="AllExceptLazyLoadFromSchemaPropertySelector.cs" />
+    <Compile Include="AllFromSchemaPropertySelector.cs" />
+    <Compile Include="AndOperator.cs" />
+    <Compile Include="AssemblyChildrenEntry.cs" />
+    <Compile Include="AssemblyChildrenEntryCollection.cs" />
+    <Compile Include="AssemblyListener.cs" />
+    <Compile Include="AssemblyPolicy.cs" />
+    <Compile Include="AssemblyPolicyBuilder.cs" />
+    <Compile Include="AutoAssembling.cs" />
+    <Compile Include="AutoGenerateOnNewAttribute.cs" />
+    <Compile Include="AvgAttribute.cs" />
+    <Compile Include="BatchModificationSchema.cs" />
+    <Compile Include="BatchModificationSchemaCache.cs" />
+    <Compile Include="BetweenFilter.cs" />
+    <Compile Include="BetweenFilterInfo.cs" />
+    <Compile Include="BinaryOperator.cs" />
+    <Compile Include="CandidateKeyAttribute.cs" />
+    <Compile Include="ChildrenAttribute.cs" />
+    <Compile Include="Column.cs" />
+    <Compile Include="ColumnAttribute.cs" />
+    <Compile Include="ColumnDefinition.cs" />
+    <Compile Include="ColumnLocator.cs" />
+    <Compile Include="ColumnMappingAttribute.cs" />
+    <Compile Include="CommonPolicies.cs" />
+    <Compile Include="CompositeAcceptAllExpandableBuilderStrategy.cs" />
+    <Compile Include="CompositeAttribute.cs" />
+    <Compile Include="CompositeBuilderStrategy.cs" />
+    <Compile Include="CompositeBuilderStrategyFactory.cs" />
+    <Compile Include="CompositeDefinition.CompositeForeignReferencePropertyDefinitionCollection.cs" />
+    <Compile Include="CompositeDefinition.cs" />
+    <Compile Include="CompositeDefinitionBuilder.cs" />
+    <Compile Include="CompositeExplicitSelectionBulderStrategy.cs" />
+    <Compile Include="CompositeFilter.cs" />
+    <Compile Include="CompositeForeignReferenceAttribute.cs" />
+    <Compile Include="CompositeForeignReferencePropertyDefinition.cs" />
+    <Compile Include="CompositeGroupBuilderStrategy.cs" />
+    <Compile Include="CompositeItemSettings.cs" />
+    <Compile Include="CompositeNothingBuilderStrategy.cs" />
+    <Compile Include="CompositePropertyDefinition.cs" />
+    <Compile Include="CompositeResult.cs" />
+    <Compile Include="CompositeRootPropertyDefinition.cs" />
+    <Compile Include="CompositeSchema.cs" />
+    <Compile Include="CompositeSchemaBuilder.cs" />
+    <Compile Include="CompositeSettings.cs" />
+    <Compile Include="CompositeSpecifyLevelBuilderStrategy.cs" />
+    <Compile Include="CompositeTrimmingBuilderStrategy.cs" />
+    <Compile Include="CompositeUnionBuilderStrategy.cs" />
+    <Compile Include="CountAttribute.cs" />
+    <Compile Include="CountBigAttribute.cs" />
+    <Compile Include="DatabaseSession.cs" />
+    <Compile Include="DatabaseTraits.cs" />
+    <Compile Include="DateTimeZeroConverterAttribute.cs" />
+    <Compile Include="DbConverter.cs" />
+    <Compile Include="DBEmpty.cs" />
+    <Compile Include="DbEntityDebugger.cs" />
+    <Compile Include="DbEntityPropertyInfo.cs" />
+    <Compile Include="DbEntityPropertyInfoCache.cs" />
+    <Compile Include="DbStoredProcedureParameters.cs" />
+    <Compile Include="DbTypeProperty.cs" />
+    <Compile Include="EntityChildrenPropertyDefinition.cs" />
+    <Compile Include="EntityColumn.cs" />
+    <Compile Include="EntityDataBag.cs" />
+    <Compile Include="EntityDefinition.ColumnDefinitionCollection.cs" />
+    <Compile Include="EntityDefinition.cs" />
+    <Compile Include="EntityDefinition.EntityPropertyDefinitionCollection.cs" />
+    <Compile Include="EntityDefinitionBuilder.cs" />
+    <Compile Include="EntityExpressionSchema.cs" />
+    <Compile Include="EntityExpressionSchemaBuilder.cs" />
+    <Compile Include="EntityForeignReferencePropertyDefinition.cs" />
+    <Compile Include="EntityManager.cs" />
+    <Compile Include="EntityPrimitivePropertyDefinition.cs" />
+    <Compile Include="EntityProperty.ColumnCollection.cs" />
+    <Compile Include="EntityProperty.cs" />
+    <Compile Include="EntityPropertyDefinition.cs" />
+    <Compile Include="EntityPropertyDefinitionRelation.cs" />
+    <Compile Include="EntityQueryListBuilder.cs" />
+    <Compile Include="EntitySchema.ColumnCollection.cs" />
+    <Compile Include="EntitySchema.cs" />
+    <Compile Include="EntitySchema.EntityPropertyCollection.cs" />
+    <Compile Include="EntitySchemaComposite.cs" />
+    <Compile Include="EntitySchemaCopositeFactory.cs" />
+    <Compile Include="EntitySchemaFilterCompilationContext.cs" />
+    <Compile Include="EntitySchemaRelation.cs" />
+    <Compile Include="EntitySuppressLazyLoadingTransient.cs" />
+    <Compile Include="EnumParseErrorFollowup.cs" />
+    <Compile Include="EnumTextOption.cs" />
+    <Compile Include="EqualsFilter.cs" />
+    <Compile Include="EqualToFilterInfo.cs" />
+    <Compile Include="EtyBusinessObject.cs" />
+    <Compile Include="ExpressionSchema.cs" />
+    <Compile Include="ExpressionSchemaBuilder.cs" />
+    <Compile Include="ExpressionSchemaBuilderFactory.cs" />
+    <Compile Include="ExpressionSchemaColumn.cs" />
+    <Compile Include="ExpressionSchemaType.cs" />
+    <Compile Include="ExpressionTokens.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="FilterBuilder.cs" />
+    <Compile Include="FilterBuilder.FilterFactoryStack.cs" />
+    <Compile Include="FilterBuilder.FilterOperatorStack.cs" />
+    <Compile Include="FilterCompilationContext.cs" />
+    <Compile Include="FilterCompilationResult.cs" />
+    <Compile Include="FilterExpression.cs" />
+    <Compile Include="FilterFactory.cs" />
+    <Compile Include="FilterInfo.cs" />
+    <Compile Include="FilterInfoExpression.cs" />
+    <Compile Include="FilterOperator.cs" />
+    <Compile Include="FilterOperatorPrecedences.cs" />
+    <Compile Include="ForeignReferenceAttribute.cs" />
+    <Compile Include="GeneralFilterCompilationContext.cs" />
+    <Compile Include="GreaterThanEqualsFilter.cs" />
+    <Compile Include="GreaterThanFilter.cs" />
+    <Compile Include="GreaterThanFilterInfo.cs" />
+    <Compile Include="GreaterThanOrEqualToFilterInfo.cs" />
+    <Compile Include="GroupAttribute.cs" />
+    <Compile Include="GroupByAttribute.cs" />
+    <Compile Include="GroupDefinition.cs" />
+    <Compile Include="GroupDefinition.GroupPropertyDefinitionCollection.cs" />
+    <Compile Include="GroupDefinitionBuilder.cs" />
+    <Compile Include="GroupExpressionSchema.cs" />
+    <Compile Include="GroupExpressionSchemaBuilder.cs" />
+    <Compile Include="GroupForeignReference.cs" />
+    <Compile Include="GroupIncapablePropertyTrimmer.cs" />
+    <Compile Include="GroupItemColumn.cs" />
+    <Compile Include="GroupPropertyDefinition.cs" />
+    <Compile Include="GroupQueryListBuilder.cs" />
+    <Compile Include="GroupResult.cs" />
+    <Compile Include="GroupSchema.cs" />
+    <Compile Include="GroupSchemaBuilder.cs" />
+    <Compile Include="GroupSchemaFilterCompilationContext.cs" />
+    <Compile Include="Having.cs" />
+    <Compile Include="IColumnLocatable.cs" />
+    <Compile Include="IDatabaseSession.cs" />
+    <Compile Include="IDbEntity.cs" />
+    <Compile Include="IDebugInfoProvider.cs" />
+    <Compile Include="IDisplayOrderOwner.cs" />
+    <Compile Include="IDisplayOrderReaderWriter.cs" />
+    <Compile Include="IEntityDefinitionProvider.cs" />
+    <Compile Include="IEntityFactory.cs" />
+    <Compile Include="IFilterFactoryOperands.cs" />
+    <Compile Include="IFilterProvider.cs" />
+    <Compile Include="InFilter.cs" />
+    <Compile Include="InFilterInfo.cs" />
+    <Compile Include="IPropertyChain.cs" />
+    <Compile Include="IPropertyChainBuilder.cs" />
+    <Compile Include="Is.cs" />
+    <Compile Include="IsActiveAttribute.cs" />
+    <Compile Include="IsCategoryAttribute.cs" />
+    <Compile Include="IsDeactiveAttribute.cs" />
+    <Compile Include="IsDescriptionAttribute.cs" />
+    <Compile Include="IsDisplayNameAttribute.cs" />
+    <Compile Include="IsDisplayOrderAttribute.cs" />
+    <Compile Include="IsFemaleAttribute.cs" />
+    <Compile Include="IsFullNameAttribute.cs" />
+    <Compile Include="IsIdAttribute.cs" />
+    <Compile Include="IsMaleAttribute.cs" />
+    <Compile Include="IsNameAttribute.cs" />
+    <Compile Include="IsNavigateUrlAttribute.cs" />
+    <Compile Include="IsNotNullFilter.cs" />
+    <Compile Include="IsNullFilter.cs" />
+    <Compile Include="IsOrganizationAttribute.cs" />
+    <Compile Include="IsOwnerAttribute.cs" />
+    <Compile Include="IsParentAttribute.cs" />
+    <Compile Include="IsRegionAttribute.cs" />
+    <Compile Include="IsRoleAttribute.cs" />
+    <Compile Include="IsTimeCreatedAttribute.cs" />
+    <Compile Include="IsTimeModifiedAttribute.cs" />
+    <Compile Include="IsUserAttribute.cs" />
+    <Compile Include="LazyLoadAttribute.cs" />
+    <Compile Include="LessThanEqualsFilter.cs" />
+    <Compile Include="LessThanFilter.cs" />
+    <Compile Include="LessThanFilterInfo.cs" />
+    <Compile Include="LessThanOrEqualToFilterInfo.cs" />
+    <Compile Include="LikeFilter.cs" />
+    <Compile Include="LikeFilterInfo.cs" />
+    <Compile Include="LoadSchemaOnlyPropertySelector.cs" />
+    <Compile Include="LoadStrategyAttribute.cs" />
+    <Compile Include="LoadStrategyOption.cs" />
+    <Compile Include="LogicOperator.cs" />
+    <Compile Include="MaxAttribute.cs" />
+    <Compile Include="MinAttribute.cs" />
+    <Compile Include="MoveDirection.cs" />
+    <Compile Include="NativeActualPrimaryKeyInfo.cs" />
+    <Compile Include="NativeAttribute.cs" />
+    <Compile Include="NativeEmptyPrimaryKeyInfo.cs" />
+    <Compile Include="NativePrimaryKeyInfo.cs" />
+    <Compile Include="NativePrimaryKeyLoader.cs" />
+    <Compile Include="NewFilterFactoryOperator.cs" />
+    <Compile Include="NonPrimaryKeyPropertyTrimmer.cs" />
+    <Compile Include="NotBetweenFilter.cs" />
+    <Compile Include="NotEqualFilter.cs" />
+    <Compile Include="NotInFilter.cs" />
+    <Compile Include="NotLikeFilter.cs" />
+    <Compile Include="NotOperator.cs" />
+    <Compile Include="NotSupportGroupingAttribute.cs" />
+    <Compile Include="NullFilterInfo.cs" />
+    <Compile Include="NullOrEmptyFilterInfo.cs" />
+    <Compile Include="OddValueConverterAttribute.cs" />
+    <Compile Include="OddValueDbMode.cs" />
+    <Compile Include="OrderBy.cs" />
+    <Compile Include="OrderByAttriubte.cs" />
+    <Compile Include="OrderByExpression.cs" />
+    <Compile Include="OrOperator.cs" />
+    <Compile Include="PermitNullAttribute.cs" />
+    <Compile Include="PrecedenceAttribute.cs" />
+    <Compile Include="PrefixOperator.cs" />
+    <Compile Include="PrimaryKeyAttribute.cs" />
+    <Compile Include="PrimaryKeyPropertySelector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyAliasAttribute.cs" />
+    <Compile Include="PropertyChain.cs" />
+    <Compile Include="PropertyChainBuilder.cs" />
+    <Compile Include="PropertyDescriptor.cs" />
+    <Compile Include="PropertyDescriptorAttribute.cs" />
+    <Compile Include="PropertyJoinMode.cs" />
+    <Compile Include="PropertyMappingAttribute.cs" />
+    <Compile Include="PropertySelectMode.cs" />
+    <Compile Include="PropertySelector.cs" />
+    <Compile Include="PropertyTrimmer.cs" />
+    <Compile Include="QueryListBuilder.cs" />
+    <Compile Include="QueryParameter.cs" />
+    <Compile Include="QueryParameterCollection.cs" />
+    <Compile Include="Select.cs" />
+    <Compile Include="SelectExpression.cs" />
+    <Compile Include="Sorter.cs" />
+    <Compile Include="SortExpression.cs" />
+    <Compile Include="SortMethod.cs" />
+    <Compile Include="SqlAliasEntityExpressionFormatter.cs" />
+    <Compile Include="SqlAssociateTableExpressionFormatter.cs" />
+    <Compile Include="SqlBlockExpressionFormatter.cs" />
+    <Compile Include="SqlCommaDelimitingListExpressionFormatter.cs" />
+    <Compile Include="SqlCompositeParagraph.cs" />
+    <Compile Include="SqlCriteriaExpressionFormatter.cs" />
+    <Compile Include="SqlDeleteExpressionFormatter.cs" />
+    <Compile Include="SqlEmptyExpressionFormatter.cs" />
+    <Compile Include="SqlExpressionFormatter.cs" />
+    <Compile Include="SqlExpressionFormattingHelper.cs" />
+    <Compile Include="SqlFromListExpressionFormatter.cs" />
+    <Compile Include="SqlGroupByListExpressionFormatter.cs" />
+    <Compile Include="SqlInlineExpressionFormatter.cs" />
+    <Compile Include="SqlInsertExpressionFormatter.cs" />
+    <Compile Include="SqlLiteralExpressionFormatter.cs" />
+    <Compile Include="SqlLiteralParagraph.cs" />
+    <Compile Include="SqlParagraph.cs" />
+    <Compile Include="SqlParenthesesExpressionEvaluator.cs" />
+    <Compile Include="SqlParenthesesExpressionFormatter.cs" />
+    <Compile Include="SqlParenthesesExpressionFormattingInfo.cs" />
+    <Compile Include="SqlSelectExpressionBuilder.cs" />
+    <Compile Include="SqlSelectExpressionFormatter.cs" />
+    <Compile Include="SqlSelectFieldExpressionFormatter.cs" />
+    <Compile Include="SqlSelectListExpressionFormatter.cs" />
+    <Compile Include="SqlServerEquivalentDatabaseTraits.cs" />
+    <Compile Include="SqlSimpleCommaDelimitingListExpressionFormatter.cs" />
+    <Compile Include="SqlStatementType.cs" />
+    <Compile Include="SqlTableItemExpressionFormatter.cs" />
+    <Compile Include="SqlTableJoinCriteriaExpressionFormatter.cs" />
+    <Compile Include="SqlTableJoinCriterionExpressionFormatter.cs" />
+    <Compile Include="SqlUpdateExpressionFormatter.cs" />
+    <Compile Include="StDevAttribute.cs" />
+    <Compile Include="StDevPAttribute.cs" />
+    <Compile Include="StoredProcedureExecutionResult.cs" />
+    <Compile Include="StoredProcedureParameterAttribute.cs" />
+    <Compile Include="StoredProcedureParameterValueGotter.cs" />
+    <Compile Include="StringEmptyConverterAttribute.cs" />
+    <Compile Include="SumAttribute.cs" />
+    <Compile Include="SuppressExpandAttribute.cs" />
+    <Compile Include="TableAttribute.cs" />
+    <Compile Include="TabularWriter.cs" />
+    <Compile Include="Timing.cs" />
+    <Compile Include="TransactionScope.cs" />
+    <Compile Include="UpdateAction.cs" />
+    <Compile Include="UseEnumTextAttribute.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="VarAttribute.cs" />
+    <Compile Include="VarPAttribute.cs" />
+    <Compile Include="WellKnown.cs" />
+    <Compile Include="Where.cs" />
+    <Compile Include="WithOperator.cs" />
+    <Compile Include="WrappedColumn.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

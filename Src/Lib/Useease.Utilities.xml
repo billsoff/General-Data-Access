@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Useease.Utilities</name>
+    </assembly>
+    <members>
+        <member name="T:Useease.Utilities.Log">
+            <summary>
+            使用跟踪源写日志，默认的跟踪源的名称是 Application。
+            </summary>
+        </member>
+        <member name="F:Useease.Utilities.Log.TRACE_SOURCE_NAME">
+            <summary>
+            默认跟踪源名称。
+            </summary>
+        </member>
+        <member name="F:Useease.Utilities.Log.Instance">
+            <summary>
+            提供默认的实例（跟踪源的名称为 Application）。
+            </summary>
+        </member>
+        <member name="M:Useease.Utilities.Log.#ctor">
+            <summary>
+            默认构造函数。
+            </summary>
+        </member>
+        <member name="M:Useease.Utilities.Log.GetTraceSource">
+            <summary>
+            获取跟踪源。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Useease.Utilities.Log.TraceInformation(System.String)">
+            <summary>
+            跟踪消息。
+            </summary>
+            <param name="msg">消息。</param>
+        </member>
+        <member name="M:Useease.Utilities.Log.TraceInformation(System.String,System.Object[])">
+            <summary>
+            跟踪消息。
+            </summary>
+            <param name="format">消息格式。</param>
+            <param name="args">消息参数。</param>
+        </member>
+        <member name="M:Useease.Utilities.Log.TraceWarning(System.String)">
+            <summary>
+            跟踪警告。
+            </summary>
+            <param name="warning">警告。</param>
+        </member>
+        <member name="M:Useease.Utilities.Log.TraceWarning(System.String,System.Object[])">
+            <summary>
+            跟踪警告。
+            </summary>
+            <param name="format">消息格式。</param>
+            <param name="args">消息参数。</param>
+        </member>
+        <member name="M:Useease.Utilities.Log.TraceError(System.String)">
+            <summary>
+            跟踪错误。
+            </summary>
+            <param name="errMsg">错误消息。</param>
+        </member>
+        <member name="M:Useease.Utilities.Log.TraceError(System.String,System.Object[])">
+            <summary>
+            跟踪错误。
+            </summary>
+            <param name="format">错误消息格式。</param>
+            <param name="args">错误消息参数。</param>
+        </member>
+        <member name="M:Useease.Utilities.Log.Trace(Useease.Utilities.Log.TraceOperation)">
+            <summary>
+            跟踪。
+            </summary>
+            <param name="operation">操作。</param>
+        </member>
+        <member name="M:Useease.Utilities.Log.PrependTime(System.String)">
+            <summary>
+            为消息附加时间。
+            </summary>
+            <param name="msg">消息。</param>
+            <returns>附加时间后的消息。</returns>
+        </member>
+        <member name="P:Useease.Utilities.Log.TraceSourceName">
+            <summary>
+            获取跟踪源名称。
+            </summary>
+        </member>
+        <member name="T:Useease.Utilities.Log.TraceOperation">
+            <summary>
+            跟踪信息。
+            </summary>
+            <param name="source">跟踪源。</param>
+        </member>
+    </members>
+</doc>

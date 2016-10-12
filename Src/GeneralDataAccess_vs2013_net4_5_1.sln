@@ -3,7 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralDataAccess", "GeneralDataAccess\GeneralDataAccess.csproj", "{2049C022-13A9-4D50-AB60-906B4635F49A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{A458FA8E-B92B-4B15-99F2-0A01B5372EB3}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll = Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Lib\Microsoft.Practices.EnterpriseLibrary.Common.xml = Lib\Microsoft.Practices.EnterpriseLibrary.Common.xml
+		Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll = Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Lib\Microsoft.Practices.EnterpriseLibrary.Data.xml = Lib\Microsoft.Practices.EnterpriseLibrary.Data.xml
+		Lib\Microsoft.Practices.ServiceLocation.dll = Lib\Microsoft.Practices.ServiceLocation.dll
+		Lib\Microsoft.Practices.Unity.dll = Lib\Microsoft.Practices.Unity.dll
+		Lib\Microsoft.Practices.Unity.Interception.dll = Lib\Microsoft.Practices.Unity.Interception.dll
+		Lib\Useease.Utilities.dll = Lib\Useease.Utilities.dll
+		Lib\Useease.Utilities.xml = Lib\Useease.Utilities.xml
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2049C022-13A9-4D50-AB60-906B4635F49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2049C022-13A9-4D50-AB60-906B4635F49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2049C022-13A9-4D50-AB60-906B4635F49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2049C022-13A9-4D50-AB60-906B4635F49A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
