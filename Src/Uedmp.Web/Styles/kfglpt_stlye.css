@@ -1,0 +1,325 @@
+/* CSS Document */
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font: 12px/20px Arial, Helvetica, sans-serif;
+}
+img
+{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+ul, li, dl, dt, dd
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background: #EFF7FF url(../images/left_bg.jpg) repeat-y;
+}
+a, a:visited
+{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: #FF6600;
+}
+
+
+.login
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 971px;
+    position: relative;
+}
+
+.login_content
+{
+    width: 971px;
+    height: 555px;
+    background: url(../images/login_bg.jpg) no-repeat;
+    position: relative;
+}
+.login_btn_01
+{
+    position: absolute;
+    left: 530px;
+    top: 378px;
+    width: 168px;
+    border: none;
+    background: none;
+}
+
+.login_btn_02
+{
+    position: absolute;
+    left: 530px;
+    top: 413px;
+    width: 168px;
+    border: none;
+    background: none;
+}
+.login_btn_03
+{
+    position: absolute;
+    left: 528px;
+    top: 450px;
+    width: 96px;
+    cursor: pointer;
+    padding: 5px 5px 2px;
+}
+
+
+
+
+.header
+{
+    width: 100%;
+    height: 86px;
+    background: url(../images/header_bg.jpg) repeat-x;
+    position: relative;
+    overflow: hidden;
+}
+.header_nav
+{
+    width: 220px;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    text-align: right;
+}
+.header_nav a
+{
+    padding-left: 20px;
+    cursor: pointer;
+}
+.usre
+{
+    width: 380px;
+    position: absolute;
+    right: 280px;
+    top: 30px;
+    text-align: right;
+}
+
+.main
+{
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+.left
+{
+    width: 183px;
+    background: url(../images/left_bg.jpg) repeat-y;
+}
+
+.nav
+{
+}
+.nav li
+{
+    width: 183px;
+    height: 42px;
+    display: block;
+    padding-bottom: 10px;
+}
+.nav li h4
+{
+    font: normal 14px/42px Arial, Helvetica, sans-serif;
+    color: #0053A0;
+}
+.nav li h4 a
+{
+    display: block;
+    width: 120px;
+    height: 42px;
+    color: #0053A0;
+    text-decoration: none;
+}
+.nav li h4 a:hover
+{
+    display: block;
+    width: 120px;
+    height: 42px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.nav_icon_1
+{
+    background: url(../images/icon_1.png) 15px center no-repeat;
+    padding-left: 60px;
+}
+.nav_icon_2
+{
+    background: url(../images/icon_2.png) 15px center no-repeat;
+    padding-left: 60px;
+}
+.nav_icon_3
+{
+    background: url(../images/icon_3.png) 15px center no-repeat;
+    padding-left: 60px;
+}
+.nav_icon_4
+{
+    background: url(../images/icon_4.png) 15px center no-repeat;
+    padding-left: 60px;
+}
+.nav_icon_5
+{
+    background: url(../images/icon_5.png) 15px center no-repeat;
+    padding-left: 60px;
+}
+.nav_icon_6
+{
+    background: url(../images/icon_6.png) 15px center no-repeat;
+    padding-left: 60px;
+}
+.nav_icon_7
+{
+    background: url(../images/icon_7.png) 15px center no-repeat;
+    padding-left: 60px;
+}
+.nav_icon_8
+{
+    background: url(../images/icon_8.png) 15px center no-repeat;
+    padding-left: 60px;
+}
+
+
+.current
+{
+    width: 183px;
+    height: 42px;
+    background: url(../images/left_nav_hover.jpg) no-repeat;
+}
+
+.right
+{
+    padding: 6px 10px 10px;
+}
+.right_main
+{
+    border: 1px solid #DEDEDE;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+}
+.position_content
+{
+    height: 29px;
+    background: url(../images/posistion_bg.jpg) repeat-x;
+}
+.position_content_icon
+{
+    height: 29px;
+    font: 12px/29px Arial, Helvetica, sans-serif;
+    background: url(../images/flag_green.png) no-repeat 10px center;
+    padding-left: 38px;
+    color: #666666;
+}
+.box
+{
+    padding: 10px;
+}
+.box_TB
+{
+}
+.box_TB th
+{
+    background: url(../images/box_th_bg.jpg) repeat-x;
+    height: 29px;
+    text-align: center;
+    padding: 0px 4px 0;
+    color: #334E59;
+    font: normal 12px/29px Arial, Helvetica, sans-serif;
+}
+.box_TB td
+{
+    border-bottom: 1px #EDEEF0 solid;
+    text-align: left;
+    font: 12px/29px Arial, Helvetica, sans-serif;
+    padding: 0px 4px 0;
+    text-align: center;
+}
+.box_td_bg_01 td
+{
+    background: #F6F7F9;
+}
+
+
+.footer
+{
+    padding: 10px 0 30px;
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

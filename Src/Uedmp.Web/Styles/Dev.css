@@ -1,0 +1,56 @@
+﻿.addNewItem
+{
+    padding: 5px;
+}
+
+.addNewItem a, .addNewItem a:hover, .addNewItem a:visited
+{
+    text-decoration: underline;
+    font-size: 1.5em;
+    color: #008080;
+    font-weight: bold;
+}
+
+legend
+{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.requiredTip
+{
+    color: #CD5C5C;
+}
+
+.validator
+{
+    color: #CD5C5C;
+}
+
+.inputLabel
+{
+    font-weight: bold;
+}
+
+.inputEntry
+{
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+}
+
+.saveButton
+{
+    border: 1px solid #ccc;
+    font-size: 1.3em;
+    width: 100px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.cancelButton
+{
+    font-size: 1.2em;
+    font-weight: 200;
+    text-decoration: underline;
+    color: #003399;
+}
